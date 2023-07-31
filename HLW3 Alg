@@ -1,0 +1,14 @@
+let massiv1 = [100, 112, 256, 349, 770];
+let massiv2 = [72, 86, 113, 119, 265, 445, 892];
+ind1 = 0;
+ind2 = 0;
+let massiv3 =[];
+k=7;
+for(i = 0; i < massiv1.length + massiv2.length; i++)
+{
+    if(massiv1[ind1] <= massiv2[ind2]){
+        massiv3[i] = massiv1[ind1++];
+    }else{
+        massiv3[i] = massiv2[ind2++];
+}}
+console.log(massiv3[k-1]);
